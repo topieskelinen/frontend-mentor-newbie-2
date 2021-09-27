@@ -1,0 +1,146 @@
+/*
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+html
+{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+#logo-container img
+{
+    max-width: 40%;
+    display: flex;
+    align-items: flex-start;
+    margin: 25px;
+}
+
+#mockup-container
+{
+    margin: 50px 25px;
+}
+
+#mockup-container img
+{
+    max-width: 100%;
+}
+
+#page-content
+{
+    margin: 25px;
+}
+
+h1
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+p
+{
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+button
+{
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    width: 50%;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 13.4px;
+    filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.541));
+}
+
+button:hover
+{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+
+#social-media
+{
+    margin: 4rem;
+}
+
+.fa
+{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 2px;
+    width: 1rem;
+    text-decoration: none;
+}
+
+.fa:hover
+{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media (min-width:736px)
+{
+    html
+    {
+        background-image: url(images/bg-desktop.svg);
+        text-align: left;
+    }
+
+    #logo-container img 
+    {
+        max-width: 15%;
+    }
+
+    #content-wrapper
+    {
+        display: flex;
+    }
+
+    h1 
+    {
+        font-size: 3.4rem;
+    }
+
+    #page-content 
+    {
+        width: 75%
+    }
+
+    button 
+    {
+        width: 35%;
+    }
+
+    #social-media
+    {
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+        flex-direction: row;
+    }
+}
